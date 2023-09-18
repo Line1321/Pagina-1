@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- FUENTES -->
+    
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./animation.css">
+
+    <!-- TITULO -->
+    <title>Tienda de Ropa</title>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Ropa</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="destacados">
+        <h2>Productos Destacados</h2>
+        <!-- productos destacados -->
+
+            <div class="card">
+                <img src="./1.png" alt="Remera">
+                <h2 class="card-title">Remera de ejemplo</h2>
+                <p>Descripción de la remera.</p>
+            </div>
+            <div class="card">
+                <img src="./remeras/5.jpg" alt="Remera">
+                <h2 class="card-title">Remera de ejemplo</h2>
+                <p>Descripción de la remera.</p>
+            </div>
+            <div class="card">
+                <img src="./remeras/2.jpg" alt="Remera">
+                <h2 class="card-title">Remera de ejemplo</h2>
+                <p>Descripción de la remera.</p>
+            </div>
+    </section>
+    
+    <section class="catalogo">
+        <!-- productos del catálogo -->
+        <div class="card">
+            <img src="./remeras/3.jpg" alt="Remera">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+        <div class="card">
+            <img src="./remeras/4.jpg" alt="Remera">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+        <div class="card">
+            <img src="./remeras/5.jpg" alt="Remera">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+        <h2>Catálogo de Ropa</h2>
+    </section>
+    
+    <section class="ofertas">
+        <h2>Ofertas Especiales</h2>
+
+        <!-- ofertas especiales -->
+        <div class="card">
+            <img src="./remeras/6.jpg" alt="Remera"">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+        <div class="card">
+            <img src="./remeras/Frontal.jpg" alt="Remera">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+        <div class="card">
+            <img src="./remeras/2.jpg" alt="Remera">
+            <h2 class="card-title">Remera de ejemplo</h2>
+            <p>Descripción de la remera.</p>
+        </div>
+    </section>
+
+    <!-- CUESTIONARIO -->
+    <h1>Cuestionario de Compra al Por Mayor de Remeras</h1>
+    <form action="procesar_respuestas.php" method="post">
+        <p>1. Nombre de la empresa o persona:</p>
+        <input type="text" name="nombre" required>
+
+        <p>2. Correo electrónico de contacto:</p>
+        <input type="email" name="correo" required>
+
+        <p>3. Número de teléfono de contacto:</p>
+        <input type="tel" name="telefono" required>
+
+        <p>4. ¿Cuántas remeras deseas comprar al por mayor?</p>
+        <input type="number" name="cantidad" required>
+
+        <p>5. ¿Tienes alguna preferencia de color o estilo para las remeras?</p>
+        <textarea name="preferencias" rows="4" cols="50"></textarea>
+
+        <p>6. ¿Tienes alguna fecha específica en mente para la entrega de las remeras?</p>
+        <input type="date" name="fecha_entrega">
+
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <!-- FIN DE CUESTIONARIO -->
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 Tienda de Ropa</p>
+    </footer>
+</body>
+</html>
